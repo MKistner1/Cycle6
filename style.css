@@ -1,0 +1,107 @@
+.background{
+  background-image: url('indexbackground.jpg');
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity:0.5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
+}
+.container{
+  left:0;
+  right:0;
+  z-index: 1;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  /*.grid-gap: 1em;*/
+  grid-auto-rows: minmax(100px, auto);
+}
+.container > div{
+  opacity:1;
+  /*background:#eee*/
+  /*padding: 1em;*/
+}
+.container > div:nth-child(odd){
+  /*background:#ddd;*/
+}
+.navbar > div {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0 auto;
+  grid-auto-rows: minmax(50px, auto);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 2em;
+  font-size: 30;
+}
+.navbar{
+  grid-column: 1/3;
+}
+.btn{
+  border: none;
+  background: none;
+  padding: 10px 20px;
+  font-size: 30;
+  transition: 1s;
+}
+.content{
+  align-self: start;
+  justify-content: start;
+}
+#home:hover{
+  background: #33FCFF;
+  opacity: 0.6;
+}
+#portfolio:hover{
+  background: #33FCFF;
+  opacity: 0.6;
+}
+#resume:hover{
+  background: #33FCFF;
+  opacity: 0.6;
+}
+#contact:hover{
+  background: #33FCFF;
+  opacity: 0.6;
+}
+#topC{
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+  font-size: 40;
+}
+#email{
+  grid-column: 1/3;
+  grid-gap: 3em;
+  justify-self: center;
+  align-self: center;
+}
+#number{
+  grid-column: 1/3;
+  grid-gap: 3em;
+  justify-self:center;
+  align-self: center;
+}
+#topR{
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  font-size: 40;
+}
+#work,#education{
+  grid-column: 2/4;
+  justify-content: start;
+  align-content: start;
+}
+#about{
+  grid-column: 1/3;
+  grid-gap: 10em;
+}
